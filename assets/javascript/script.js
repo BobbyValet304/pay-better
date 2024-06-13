@@ -13,9 +13,17 @@ const collectEmployees = function () {
 
     //We need to create an employee
     //We need to take this employee and add to data
+    const employee = {
+      first: firstName,
+      last: lastName,
+      pay: salary,
+      //salary is currently a string and needs to be an integer
+    };
+    data.push(employee);
 
     accept = confirm("Would you like to add another employee?");
   }
+  console.log(data);
 };
 
 // Display the average salary
